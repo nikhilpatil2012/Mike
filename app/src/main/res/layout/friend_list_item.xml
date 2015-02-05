@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/master_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dip"
+    >
+
+	<TextView
+        android:text="Nikhil101001"
+        android:id="@+id/friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+	
+	
+     <!-- Rightend Arrow -->
+     <Button
+         android:textColor="#ffffff"
+        android:id="@+id/friend_invite"
+        android:text="Invite"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:layout_alignParentRight="true"
+     	android:layout_centerVertical="true"/>
+
+</RelativeLayout>

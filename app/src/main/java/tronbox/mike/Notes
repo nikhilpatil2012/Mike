@@ -1,0 +1,21 @@
+
+  How To Do Bluetooth Facts !!
+
+
+  Fact 1 :- How to unbond the bonded bluetooth devices ?
+
+   for(BluetoothDevice d : Master.bluetoothAdapter.getBondedDevices())
+ {
+     try {
+
+         Log.w(TAG, d.getClass().toString());
+         Method m = d.getClass().getMethod("removeBond", (Class[]) null);
+         m.invoke(d, (Object[]) null);
+     } catch (Exception e) {
+         Log.e(TAG, e.getMessage());
+     }
+
+ }
+
+
+
